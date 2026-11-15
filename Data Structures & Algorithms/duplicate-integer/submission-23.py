@@ -1,0 +1,14 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        print(nums[0], "checking")
+        result = False
+        if nums: 
+            start = nums[0]
+            for i in range(len(nums)):
+                print(i)
+                if start == nums[i]:
+                    result = True
+                else:
+                    result = False
+                
+        return result
